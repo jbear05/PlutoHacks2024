@@ -47,10 +47,11 @@ def extract_and_print_data(data):
         recycling = packaging.get('recycling', 'No recycling information available')
         recycling_info.append(f"Recycling information: {recycling}")
 
-    # Print the materials
-    for material in materials:
-        print(material)
+    return materials, recycling_info
+    # # Print the materials
+    # for material in materials:
+    #     print(material)
 
-    # Print the recycling information
-    for info in recycling_info:
-        print(info)
+    # # Print the recycling information
+    # for info in recycling_info:
+    #     print(info)

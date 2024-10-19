@@ -37,7 +37,9 @@ def main():
     if barcode:
         print(f"Barcode: {barcode}")
         data = fetch_product_data(barcode)
-        extract_and_print_data(data)
+        materials, info = extract_and_print_data(data)
+        return materials, info, barcode
+
     else:
         print("No barcode detected.")
 
