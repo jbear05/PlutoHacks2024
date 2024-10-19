@@ -5,6 +5,7 @@ from kivy.uix.textinput import TextInput
 from kivy.uix.image import Image
 from kivy.app import App
 from kivy.graphics import Color, Rectangle
+from test import main
 
 class BarcodeScannerApp(App):
     def build(self):
@@ -43,7 +44,7 @@ class BarcodeScannerApp(App):
         self.rect.size = instance.size
 
     def scan_barcode(self, instance):
-        result = "Sample Result"  # Replace with actual scanning logic
+        result = main()  # Replace with actual scanning logic
         self.result_label.text = f'Scan Result: {result}'
 
 if __name__ == '__main__':
