@@ -12,13 +12,12 @@ def jprint(obj):
 def is_recyclable(product_data):
     if 'product' in product_data and 'packaging' in product_data['product']:
         packaging_info = product_data['product']['ecoscore_data']['adjustments']['packaging']
-        print(packaging_info)
-        #return "recyclable" in packaging_info.lower()
+        return packaging_info['packagings']
     #return False
 
 product_data = response.json()
 #jprint(response.json())
-is_recyclable(product_data)
+print(is_recyclable(product_data))
 # if is_recyclable(product_data):
 #     print("The product is recyclable.")
 # else:
