@@ -45,7 +45,7 @@ def extract_and_print_data(data):
         materials.append(f"Ecoscore material score: {score}. This score represents the environmental impact of the material used in the packaging, with a lower score indicating a more environmentally friendly material.")
         
         recycling = packaging.get('recycling', 'No recycling information available')
-        recycling_info.append(f"Recycling information: {recycling}")
+        recycling_info.append(f"Recycling information for {packaging['material']}: {recycling}")
 
     return materials, recycling_info
     # # Print the materials

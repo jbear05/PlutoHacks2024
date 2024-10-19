@@ -40,8 +40,8 @@ def main():
         materials, info = extract_and_print_data(data)
         return materials, info, barcode
 
-    else:
-        print("No barcode detected.")
+    # else:
+    #     print("No barcode detected.")
 
 if __name__ == "__main__":
     main()
