@@ -29,7 +29,7 @@ class BarcodeScannerApp(App):
         # Create a label to display scanned barcode
         self.scanned_label = Label(
             text='Scan a barcode',
-            font_size='24sp',
+            font_size='20sp',
             color=(0, 0, 0, 1),  # Black color
             halign='center',
             valign='middle'
