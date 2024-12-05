@@ -1,0 +1,1 @@
+My first project ever submitted to a hackathon. Made alongside three other aspiring developers. Throughout making this project I learned about git and how to make github repositories, as well as using new python technologies, specifically the library kivy.
